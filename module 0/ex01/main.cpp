@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:06:32 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/15 22:10:03 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/16 00:23:36 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int main(void)
 {
 	PhoneBook book;
 	
+	book.InitNumCount();
 	std::cout << "Welcome to your phonebook\nCOMMANDS:\n";
 	std::cout << "	ADD\n	SEARCH\n	EXIT\n\n";
 	
@@ -29,8 +30,8 @@ int main(void)
 			command[i] = toupper(command[i]);
 		if(!strcmp(command.c_str(), "ADD"))
 			book.Add();	
-		//else if(!strcmp(command.c_str(), "SEARCH"))
-			//book.search();
+		else if(!strcmp(command.c_str(), "SEARCH"))
+			book.Search();
 		else if(!strcmp(command.c_str(), "EXIT"))
 			break ;
 	}

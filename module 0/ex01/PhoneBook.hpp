@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:13:42 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/15 22:42:16 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/16 00:22:43 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,12 @@ class Contact
 		void SetNickName(std::string str) { nickname = str; }
 		void SetPhoneNumber(std::string str) { phone_number = str; }
 		void SetSecret(std::string str) { secret = str; }
-
+		
+		std::string GetFirstName() { return first_name; }
+		std::string GetLastName() { return last_name; }
+		std::string GetNickName() { return nickname; }
+		std::string GetPhoneNumber() { return phone_number; }
+		std::string GetSecret() { return secret; }
 };
 
 class PhoneBook
@@ -39,8 +44,10 @@ class PhoneBook
 		std::string GetInput(std::string str);
 		void Add();
 		void Search();
+		void InitNumCount();
 	private:
-		Contact contatcs[8];
+		Contact contacts[8];
+		int num_count;
 };
 
 #endif
