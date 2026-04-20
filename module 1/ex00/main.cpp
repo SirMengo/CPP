@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/16 03:56:32 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/16 04:00:31 by msimoes          ###   ########.fr       */
+/*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
+/*   Updated: 2026/04/20 14:17:51 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "main.hpp"
 
-int main(void)
-{
-	
+int main()
+{	
+	randomChump("Seila");
 }
