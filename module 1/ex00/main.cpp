@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/20 14:17:51 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/27 13:36:45 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,7 @@
 int main()
 {	
 	randomChump("Seila");
+	Zombie *armindo = newZombie("armindo");
+	armindo->announce();
+	//delete armindo;
 }

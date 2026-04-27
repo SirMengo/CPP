@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:11:56 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/20 14:55:20 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/27 13:19:01 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 Zombie::Zombie(std::string name)
 {
 	this->name = name;
+}
+
+Zombie::~Zombie(){	
 }
 
 void Zombie::announce(void)
