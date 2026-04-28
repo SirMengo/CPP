@@ -6,11 +6,13 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:11:56 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/27 14:01:38 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/28 12:03:29 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+Zombie::Zombie() : name("") {}
 
 Zombie::Zombie(std::string name)
 {
