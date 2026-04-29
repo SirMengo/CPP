@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:05:32 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/27 13:17:54 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/29 11:48:07 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Zombie
 		Zombie();
 		~Zombie();
 		Zombie(std::string name);
+		
 		void announce(void);
 };
 

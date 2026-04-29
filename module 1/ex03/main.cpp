@@ -5,24 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/28 12:07:31 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/28 14:45:41 by msimoes          ###   ########.fr       */
+/*   Created: 2026/04/29 11:12:06 by msimoes           #+#    #+#             */
+/*   Updated: 2026/04/29 11:46:53 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
 int main()
 {
-	std::string string  = "HI THIS IS BRAIN";
-	std::string *stringPTR = &string;
-	std::string &stringREF = string;
-	
-	std::cout << "Variable \"Brain\" address:" << &string << "\n";
-	std::cout << "Pointer address:" << stringPTR << "\n";
-	std::cout << "Reference address:" << &stringREF << "\n\n";
-	
-	std::cout << "Variable \"Brain\" value:" << string << "\n";
-	std::cout << "Pointer value:" << stringPTR << "\n";
-	std::cout << "Reference value:" << stringREF << "\n";
+	{
+		Weapon club = Weapon("crude spiked club");
+
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("some other type of club");
+		bob.attack();
+	}
+	{
+		Weapon club = Weapon("crude spiked club");
+
+		HumanB jim("Jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
+	return 0;
 }
