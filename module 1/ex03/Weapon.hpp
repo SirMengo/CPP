@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 11:17:10 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/29 11:49:07 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/29 14:15:31 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@ class Weapon
 		~Weapon();
 		Weapon(std::string type);
 		void setType(std::string type);
-		
-		std::string getType();
+		const std::string &getType() const;
 };
 
 #endif

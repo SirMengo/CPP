@@ -6,12 +6,12 @@
 #    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/04/29 12:01:40 by msimoes          ###   ########.fr        #
+#    Updated: 2026/04/29 12:24:04 by msimoes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Violence
-SRCS = main.cpp HumanA.cpp HumanB.cpp
+SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 
 RM = rm -f
 COMPILER = c++
