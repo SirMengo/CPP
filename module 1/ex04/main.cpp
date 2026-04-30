@@ -6,14 +6,26 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:46:13 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/29 15:58:23 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/04/30 13:35:57 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
+#include "main.hpp"
+
+std::string ReplaceString(std::string str, std::string s1, std::string s2)
+{
+	for(int i = 0; str[i]; i++)
+	{
+		int j = 0;
+		if(str[i] == s1[0])
+			while(str[i + j] == s1[j])
+				j++;
+		if(s1[j] == '\0')
+		{
+			while()
+		}
+	}
+}
 
 int main(int ac, char **av)
 {
@@ -38,7 +50,7 @@ int main(int ac, char **av)
 	std::string content = buffer.str();
 	file.close();
 	
-	//filename += ".replace";
+	//filename.append(".replace");
 	s1 = av[2];
 	s2 = av[3];
 	
