@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: mago <mago@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 11:48:27 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/30 11:50:07 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/05/05 14:21:24 by mago             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,4 @@
 # include <fstream>
 # include <sstream>
 # include <string>
-
-
 #endif
