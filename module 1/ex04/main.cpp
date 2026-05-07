@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mago <mago@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: msimoes@student.42lisboa.com <msimoes>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:46:13 by msimoes           #+#    #+#             */
-/*   Updated: 2026/05/06 15:09:21 by mago             ###   ########.fr       */
+/*   Updated: 2026/05/07 11:56:47 by msimoes@stu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main(int ac, char **av)
 	std::string s2;
 
 	if(ac != 4)
-		exit(1);
+		return 1;
 	
 	filename = av[1];
 
@@ -46,7 +46,7 @@ int main(int ac, char **av)
 	if(!file)
 	{
 		std::cout << "No/Invalid file" << std::endl;
-		exit(0);
+		return 1;
 	}
 
 	std::stringstream buffer;
@@ -64,9 +64,10 @@ int main(int ac, char **av)
 	if(!outfile)
 	{
 		std::cerr << "Outfile error";
-		exit(1);
+		delete replaced;
+		return 1;
 	}
 	outfile << *replaced << std::endl;
 	delete replaced;
-	exit(0);
+	return 0;
 }
