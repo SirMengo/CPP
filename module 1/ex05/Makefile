@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
+#    By: msimoes@student.42lisboa.com <msimoes>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/04/29 14:45:58 by msimoes          ###   ########.fr        #
+#    Updated: 2026/05/13 15:58:48 by msimoes@stu      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Sed
-SRCS = main.cpp
+NAME = harl
+SRCS = main.cpp Harl.cpp
  
 RM = rm -f
 COMPILER = c++
