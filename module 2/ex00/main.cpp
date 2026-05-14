@@ -1,23 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/30 11:48:27 by msimoes           #+#    #+#             */
-/*   Updated: 2026/05/14 11:42:50 by msimoes          ###   ########.fr       */
+/*   Created: 2026/05/14 11:40:40 by msimoes@stu       #+#    #+#             */
+/*   Updated: 2026/05/14 11:43:43 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-# define MAIN_HPP
-
-# include <cstdlib>   // for exit()
-# include <sstream>   
-# include <iostream>
-# include <fstream>
-# include <sstream>
-# include <string>
-
-#endif
+#

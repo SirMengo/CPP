@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msimoes@student.42lisboa.com <msimoes>     +#+  +:+       +#+         #
+#    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/05/13 15:58:48 by msimoes@stu      ###   ########.fr        #
+#    Updated: 2026/05/14 11:42:57 by msimoes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
