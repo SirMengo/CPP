@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 11:45:59 by msimoes           #+#    #+#             */
-/*   Updated: 2026/05/14 13:57:42 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/05/14 16:04:51 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Fixed
 		void setRawBits(int const raw);
 	private:
 		int _value;
-		static const int bits = 0;
+		static const int bits = 8;
 };
 
 #endif
