@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/28 12:01:34 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/06/19 14:05:12 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int main(int ac, char **av)
 {
-	if(ac > 3)
+	if(ac != 3)
 	{
-		std::cout << "Please max of the params.\n";
+		std::cout << "Please instert max of 3 params.\n";
 		exit (0);
 	}
 	randomChump("Seila");

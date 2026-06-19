@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:18:08 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/16 03:40:55 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/06/19 10:51:28 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ std::string FormatColumn(std::string str)
 		return str.substr(0, 9) + ".";
 	return str;
 }
-
 
 void PhoneBook::Search()
 {
