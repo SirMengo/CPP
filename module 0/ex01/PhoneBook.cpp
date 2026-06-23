@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:18:08 by msimoes           #+#    #+#             */
-/*   Updated: 2026/06/19 10:51:28 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/06/23 11:20:07 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,28 +48,34 @@ std::string FormatColumn(std::string str)
 	return str;
 }
 
+
 void PhoneBook::Search()
 {
-	std::cout << "| id       | Name     | Surname  | Nickname | Number   |\n";
+	std::cout << "| Index    | Name     | Surname  | Nickname |\n";
 	for(int i = 0; contacts[i].GetStatus(); i++)
 	{
 		std::cout << "|" << std::setw(10) << i + 1;
 		std::cout << "|" << std::setw(10) << FormatColumn(contacts[i].GetFirstName());
 		std::cout << "|" << std::setw(10) << FormatColumn(contacts[i].GetLastName());
-		std::cout << "|" << std::setw(10) << FormatColumn(contacts[i].GetNickName());
-		std::cout << "|" << std::setw(10) << FormatColumn(contacts[i].GetPhoneNumber()) << "|" << "\n";
+		std::cout << "|" << std::setw(10) << FormatColumn(contacts[i].GetNickName()) << "|" << std::endl;
 	}
 	while(1)
 	{
 		std::string str;
 		int index = 0;
-		std::cout << "Input search number: ";
-		std::getline(std::cin, str);
+		str = GetInput("Input search number: ");
 		index = atoi(str.c_str()) - 1;
 		if(index < 0 || index > MAX_CONTACTS - 1)
 		{
 			std::cout << "Number outside of index.\n";
 			continue ;
+		}
+		if(index > num_count - 1)
+		{
+			if(num_count >= MAX_CONTACTS - 1)
+				continue;
+			else
+				std::cout << "Contact not yet created." << std::endl; 
 		}
 		if(contacts[index].GetStatus())
 		{
