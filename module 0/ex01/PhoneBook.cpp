@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:18:08 by msimoes           #+#    #+#             */
-/*   Updated: 2026/06/23 11:20:07 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/06/23 14:29:11 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ std::string FormatColumn(std::string str)
 void PhoneBook::Search()
 {
 	std::cout << "| Index    | Name     | Surname  | Nickname |\n";
-	for(int i = 0; contacts[i].GetStatus(); i++)
+	for(int i = 0; i < MAX_CONTACTS && contacts[i].GetStatus(); i++)
 	{
 		std::cout << "|" << std::setw(10) << i + 1;
 		std::cout << "|" << std::setw(10) << FormatColumn(contacts[i].GetFirstName());
