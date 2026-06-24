@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:18:08 by msimoes           #+#    #+#             */
-/*   Updated: 2026/06/23 14:29:11 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/06/24 13:15:14 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,26 @@ std::string PhoneBook::GetInput(std::string str)
 	return input;
 }
 
+std::string PhoneBook::GetNonEmptyInput(std::string prompt)
+{
+	std::string input;
+
+	input = GetInput(prompt);
+	while(input.empty())
+	{
+		std::cout << "This field cannot be empty, please try again.\n";
+		input = GetInput(prompt);
+	}
+	return input;
+}
+
 void PhoneBook::Add()
 {	
-	contacts[num_count % MAX_CONTACTS].SetFirstName(GetInput("First Name: "));
-	contacts[num_count % MAX_CONTACTS].SetLastName(GetInput("Last Name: "));
-	contacts[num_count % MAX_CONTACTS].SetNickName(GetInput("Nickname: "));
-	contacts[num_count % MAX_CONTACTS].SetPhoneNumber(GetInput("Phone number: "));
-	contacts[num_count % MAX_CONTACTS].SetSecret(GetInput("Darkest Secret: "));
+	contacts[num_count % MAX_CONTACTS].SetFirstName(GetNonEmptyInput("First Name: "));
+	contacts[num_count % MAX_CONTACTS].SetLastName(GetNonEmptyInput("Last Name: "));
+	contacts[num_count % MAX_CONTACTS].SetNickName(GetNonEmptyInput("Nickname: "));
+	contacts[num_count % MAX_CONTACTS].SetPhoneNumber(GetNonEmptyInput("Phone number: "));
+	contacts[num_count % MAX_CONTACTS].SetSecret(GetNonEmptyInput("Darkest Secret: "));
 	contacts[num_count % MAX_CONTACTS].ActivateContact();
 	num_count++;
 }
@@ -44,6 +57,7 @@ void PhoneBook::Add()
 std::string FormatColumn(std::string str)
 {
 	if(str.length() > 10)
+	
 		return str.substr(0, 9) + ".";
 	return str;
 }

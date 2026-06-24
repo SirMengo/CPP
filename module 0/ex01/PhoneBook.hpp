@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 15:13:42 by msimoes           #+#    #+#             */
-/*   Updated: 2026/06/23 10:58:58 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/06/24 13:15:50 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ class PhoneBook
 {
 	public:
 		std::string GetInput(std::string str);
+		std::string GetNonEmptyInput(std::string prompt);
 		void Add();
 		void Search();
 		void InitEnvars();
