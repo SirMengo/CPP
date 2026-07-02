@@ -6,11 +6,11 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:46:13 by msimoes           #+#    #+#             */
-/*   Updated: 2026/05/14 11:42:45 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/02 02:26:46 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#include "main.hpp" //CReates a new line when unecessary
 
 std::string *ReplaceString(std::string str, std::string s1, std::string s2)
 {
@@ -67,7 +67,7 @@ int main(int ac, char **av)
 		delete replaced;
 		return 1;
 	}
-	outfile << *replaced << std::endl;
+	outfile << *replaced;
 	delete replaced;
 	return 0;
 }
