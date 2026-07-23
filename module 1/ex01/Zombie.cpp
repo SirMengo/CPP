@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:11:56 by msimoes           #+#    #+#             */
-/*   Updated: 2026/04/28 12:03:29 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/22 11:30:20 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ Zombie::Zombie(std::string name)
 	this->name = name;
 }
 
-Zombie::~Zombie(){	
+Zombie::~Zombie()
+{
+	std::cout << name << ": Gooooooodbye!";
 }
 
 void Zombie::announce(void)
