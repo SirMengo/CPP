@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:36:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/23 13:30:35 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/23 14:06:04 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,8 @@ int main()
 		aerith.beRepaired(1);
 
 	std::cout << "\n=== Testing copy constructor ===" << std::endl;
-	ClapTrap sephiroth(aerith);
+	ClapTrap sephiroth(cloud);
+	sephiroth.attack("Sephiroth");
 
 	std::cout << "\n=== Testing copy assignment operator ===" << std::endl;
 	ClapTrap barret("Barret");
