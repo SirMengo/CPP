@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 13:20:08 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/27 14:25:25 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/27 14:42:48 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,21 +22,24 @@ int main()
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	
-	const Animal  *teste = new Animal();
+	Animal  *teste = new Animal() ;
 	
-	teste = j;
-	//const Animal* i = new Cat();
+	*teste = *j;
+	//const WrongAnimal* i = new Wrong
+	Cat();
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
 	i->makeSound(); 
-	std::cout << teste->getType() << " " << std::endl;
-	teste->makeSound();
+	
 	j->makeSound();
 	meta->makeSound();
+	delete j;
+	std::cout << teste->getType() << " " << std::endl;
+	teste->makeSound();
 
 	delete meta;
-	delete j;
+	
 	delete i;
-	delete teste;
+	
 	return 0;
 }

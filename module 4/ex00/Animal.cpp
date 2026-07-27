@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 11:19:15 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/27 14:24:05 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/27 14:42:05 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ Animal &Animal::operator=(const Animal &copy)
 {
 	if(this == &copy)
 		return *this;
+	this->type = copy.type;
 	std::cout << "Animal copy assigment constructor called." << std::endl;
 	return *this;
 }
