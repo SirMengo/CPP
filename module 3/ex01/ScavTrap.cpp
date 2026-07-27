@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/23 13:44:07 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/24 11:59:27 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/24 12:08:05 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &copy)
 	_name = copy._name + " copy";
 	_hit_points = copy._hit_points;
 	_attack_damage = copy._attack_damage;
+	_be_guard = copy._be_guard;
 	std::cout << "Copy assigment operator called" << std::endl;
 	return *this;
 }
