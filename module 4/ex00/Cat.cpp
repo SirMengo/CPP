@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 11:55:48 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/27 14:00:31 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/27 14:45:03 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ Cat &Cat::operator=(const Cat &copy)
 {
 	if(this == &copy)
 		return *this;
+	this->type = copy.type;
 	std::cout << "Cat copy assigment constructor called." << std::endl;
 	return *this;
 }
