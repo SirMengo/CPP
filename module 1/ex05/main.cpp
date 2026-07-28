@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/07 11:32:08 by mago              #+#    #+#             */
-/*   Updated: 2026/05/14 11:54:22 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/02 02:23:33 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,9 @@ int main(int ac, char **av)
 	
 	if(ac == 1)
 	{
-		std::cout << "Missing instructions!";
+		std::cout << "Missing instructions!" << std::endl;
 		return 0;
 	}
-	for(int i = 1; i < ac; i++)
-		harl.complain(av[1]);
-	
-	Harl copy(harl);
-	for(int i = 1; i < ac; i++)
-		harl.complain(av[1]);
-	
-	Harl assign;
-	assign = copy;
 	for(int i = 1; i < ac; i++)
 		harl.complain(av[1]);
 }

@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/01 23:26:28 by msimoes          ###   ########.fr       */
+/*   Created: 2026/07/27 14:12:50 by msimoes           #+#    #+#             */
+/*   Updated: 2026/07/27 14:16:16 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
 
-int main()
-{	
-	randomChump("Seila");
-	Zombie *armindo = newZombie("armindo");
-	armindo->announce();
-	delete armindo;
-}
+# include "WrongAnimal.hpp"
+
+class WrongCat : public WrongAnimal
+{
+	public:
+		WrongCat();
+		WrongCat(const WrongCat &copy);
+		WrongCat &operator=(const WrongCat &copy);
+		void makeSound() const;
+		~WrongCat();
+	private:
+};
+
+#endif

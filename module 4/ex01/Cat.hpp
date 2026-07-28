@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/01 23:26:28 by msimoes          ###   ########.fr       */
+/*   Created: 2026/07/27 11:25:38 by msimoes           #+#    #+#             */
+/*   Updated: 2026/07/27 16:16:59 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#ifndef CAT_HPP
+# define CAT_HPP
 
-int main()
-{	
-	randomChump("Seila");
-	Zombie *armindo = newZombie("armindo");
-	armindo->announce();
-	delete armindo;
-}
+# include "Animal.hpp"
+
+class Cat : public Animal
+{
+	public:
+		Cat();
+		Cat(const Cat &copy);
+		Cat &operator=(const Cat &copy);
+		void makeSound() const;
+		~Cat();
+	private:
+		Brain* catBrain;
+};
+
+#endif

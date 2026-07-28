@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/01 23:26:28 by msimoes          ###   ########.fr       */
+/*   Created: 2026/07/27 14:30:56 by msimoes           #+#    #+#             */
+/*   Updated: 2026/07/27 16:19:54 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
 
-int main()
-{	
-	randomChump("Seila");
-	Zombie *armindo = newZombie("armindo");
-	armindo->announce();
-	delete armindo;
-}
+#include <iostream>
+
+class Brain
+{
+	public:
+		Brain();
+		Brain(const Brain &copy);
+		Brain &operator=(const Brain &copy);
+		std::string ideas[100];
+		void setIdea(std::string str, int i);
+		std::string getIdea(int i);
+		virtual ~Brain();
+	private:
+	protected:
+};
+
+#endif

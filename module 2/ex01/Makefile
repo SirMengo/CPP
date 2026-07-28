@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
+#    By: msimoes <msimoes@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/05/14 13:56:57 by msimoes          ###   ########.fr        #
+#    Updated: 2026/07/02 04:34:32 by msimoes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,16 +14,16 @@ NAME = Fixed
 SRCS = Fixed.cpp main.cpp
  
 RM = rm -f
-COMPILER = c++
-COMPILER_FLAGS = -Wall -Wextra -Werror -std=c++98
+CXX = c++
+CXX_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 OBJS = $(SRCS:.cpp=.o)
  
 %.o : %.cpp
-	@ $(COMPILER) $(COMPILER_FLAGS) -c $< -o $@
+	@ $(CXX) $(CXX_FLAGS) -c $< -o $@
  
 $(NAME): $(OBJS)
-	@ $(COMPILER) $(COMPILER_FLAGS) $(OBJS) -o $(NAME) && echo "Compiled"
+	@ $(CXX) $(CXX_FLAGS) $(OBJS) -o $(NAME) && echo "Compiled"
  
 all: $(NAME)
  

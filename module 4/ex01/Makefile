@@ -6,24 +6,25 @@
 #    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/07/02 02:32:55 by msimoes          ###   ########.fr        #
+#    Updated: 2026/07/27 14:46:28 by msimoes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Brain
-SRCS = main.cpp
-
+SRCS = Animal.cpp Cat.cpp Dog.cpp main.cpp WrongCat.cpp WrongAnimal.cpp \
+		Brain.cpp
+ 
 RM = rm -f
-CXX = c++
-CXX_FLAGS = -Wall -Wextra -Werror -std=c++98
+COMPILER = c++
+COMPILER_FLAGS = -Wall -Wextra -Werror -std=c++98
 
 OBJS = $(SRCS:.cpp=.o)
  
 %.o : %.cpp
-	@ $(CXX) $(CXX_FLAGS) -c $< -o $@
+	@ $(COMPILER) $(COMPILER_FLAGS) -c $< -o $@
  
 $(NAME): $(OBJS)
-	@ $(CXX) $(CXX_FLAGS) $(OBJS) -o $(NAME) && echo "Compiled"
+	@ $(COMPILER) $(COMPILER_FLAGS) $(OBJS) -o $(NAME) && echo "Compiled"
  
 all: $(NAME)
  

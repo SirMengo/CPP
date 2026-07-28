@@ -1,21 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 11:56:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/01 23:26:28 by msimoes          ###   ########.fr       */
+/*   Created: 2026/07/27 11:19:22 by msimoes           #+#    #+#             */
+/*   Updated: 2026/07/27 15:28:27 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#ifndef ANIMAL_HPP
+# define ANIMAL_HPP
 
-int main()
-{	
-	randomChump("Seila");
-	Zombie *armindo = newZombie("armindo");
-	armindo->announce();
-	delete armindo;
-}
+# include <iostream>
+# include "Brain.hpp"
+
+class Animal
+{
+	public:
+		Animal();
+		Animal(const Animal &copy);
+		Animal &operator=(const Animal &copy);
+		virtual void makeSound() const;
+		std::string getType() const;
+		virtual ~Animal();
+	private:
+	protected:
+		std::string type;
+};
+
+#endif
