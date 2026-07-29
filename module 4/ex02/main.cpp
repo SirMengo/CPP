@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 13:20:08 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/29 13:13:10 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/07/29 13:17:03 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,13 @@ int main()
 	std::cout << "Doguinho: " << Doguinho->getIdea(67) << std::endl;
 	delete Dogao;
 	delete Doguinho;
+
+	/*const Animal* animal = new Animal();
+		std::cout << "Hi, I am a " << animal->getType() << " and I don't have a Brain!" << std::endl;
+	animal->makeSound();
+	delete animal;
+	std::cout << std::endl;*/
+	
 	return 0;
 }
  

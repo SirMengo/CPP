@@ -6,12 +6,13 @@
 #    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/07/27 14:16:51 by msimoes          ###   ########.fr        #
+#    Updated: 2026/07/27 14:46:28 by msimoes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Animal
-SRCS = Animal.cpp Cat.cpp Dog.cpp main.cpp WrongCat.cpp WrongAnimal.cpp
+NAME = Brain
+SRCS = Animal.cpp Cat.cpp Dog.cpp main.cpp WrongCat.cpp WrongAnimal.cpp \
+		Brain.cpp
  
 RM = rm -f
 COMPILER = c++

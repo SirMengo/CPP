@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/27 11:25:38 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/29 11:58:30 by msimoes          ###   ########.fr       */
+/*   Created: 2026/07/27 11:27:35 by msimoes           #+#    #+#             */
+/*   Updated: 2026/07/27 16:31:20 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
 # include "Animal.hpp"
 
-class Cat : public Animal
+class Dog : public Animal
 {
 	public:
-		Cat();
-		Cat(const Cat &copy);
-		Cat &operator=(const Cat &copy);
+		Dog();
+		Dog(const Dog &copy);
+		Dog &operator=(const Dog &copy);
+		void makeSound() const;
 		void setIdea(std::string str, int i);
 		std::string getIdea(int i);
-		void makeSound() const;
-		~Cat();
+		~Dog();
 	private:
-		Brain* catBrain;
+		Brain* dogBrain;
 };
 
 #endif

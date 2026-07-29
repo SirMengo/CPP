@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/27 11:25:38 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/29 11:58:30 by msimoes          ###   ########.fr       */
+/*   Created: 2026/07/27 14:12:50 by msimoes           #+#    #+#             */
+/*   Updated: 2026/07/27 14:16:16 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
 
-# include "Animal.hpp"
+# include "WrongAnimal.hpp"
 
-class Cat : public Animal
+class WrongCat : public WrongAnimal
 {
 	public:
-		Cat();
-		Cat(const Cat &copy);
-		Cat &operator=(const Cat &copy);
-		void setIdea(std::string str, int i);
-		std::string getIdea(int i);
+		WrongCat();
+		WrongCat(const WrongCat &copy);
+		WrongCat &operator=(const WrongCat &copy);
 		void makeSound() const;
-		~Cat();
+		~WrongCat();
 	private:
-		Brain* catBrain;
 };
 
 #endif
