@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msimoes <msimoes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 11:45:59 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/02 04:30:32 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/10/15 12:13:37 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class Fixed
 		Fixed operator*(const Fixed &fixed);
 		Fixed operator/(const Fixed &fixed);
 		Fixed operator++();
-		Fixed operator++(int qqlr);
+		Fixed operator++(int);
 		Fixed operator--();
 		Fixed operator--(int qqlr);
 		static Fixed min(Fixed &fixed1, Fixed &fixed2);

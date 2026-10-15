@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msimoes <msimoes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 11:46:25 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/02 04:33:33 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/10/15 12:13:13 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,11 +121,13 @@ Fixed Fixed::operator++()
 	return _value++;
 }
 
-Fixed Fixed::operator++(int qqlr)
+Fixed Fixed::operator++(int)
 {
-	qqlr = this->_value;
-	_value++;
-	return qqlr;
+	Fixed	tmp;
+
+	tmp.setRawBits(this->_value);
+	(this->_value)++;
+	return (tmp);
 }
 
 Fixed Fixed::operator--()
