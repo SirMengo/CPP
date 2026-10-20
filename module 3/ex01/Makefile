@@ -6,11 +6,11 @@
 #    By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 11:16:01 by msimoes           #+#    #+#              #
-#    Updated: 2026/07/24 11:57:35 by msimoes          ###   ########.fr        #
+#    Updated: 2026/10/20 14:12:32 by msimoes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = SvapTrap
+NAME = ScavTrap
 SRCS = ClapTrap.cpp main.cpp ScavTrap.cpp
  
 RM = rm -f

@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:36:54 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/23 14:06:04 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/10/20 14:10:10 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int main()
 	std::cout << "\n=== Take damage while already dead ===" << std::endl;
 	cloud.takeDamage(5);
 
-	std::cout << "\n=== Repair while dead but has energy (should still work per current code) ===" << std::endl;
+	std::cout << "\n=== Repair while dead but has energy ===" << std::endl;
 	cloud.beRepaired(3);
 
 	std::cout << "\n=== Creating Tifa to test energy running out ===" << std::endl;
