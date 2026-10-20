@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:34:18 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/24 11:43:39 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/10/20 14:15:20 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,11 @@ void ClapTrap::takeDamage(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
+	if(_hit_points <= 0)
+	{
+		std::cout << "ClapTrap " << _name << " is dead, it cannot repait!" << std::endl;
+		return;
+	}
 	if(_energy_points <= 0)
 	{
 		std::cout << "ClapTrap " << _name << " has no energy to repair!" << std::endl;
