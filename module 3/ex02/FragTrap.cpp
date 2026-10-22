@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/23 13:44:07 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/24 12:07:36 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/10/22 11:01:29 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,11 @@ void FragTrap::takeDamage(unsigned int amount)
 
 void FragTrap::beRepaired(unsigned int amount)
 {
+	if(_hit_points <= 0)
+	{
+		std::cout << "FragTrap " << _name << " is dead, it cannot repait!" << std::endl;
+		return;
+	}
 	if(_energy_points <= 0)
 	{
 		std::cout << "FragTrap " << _name << " has no energy to repair!" << std::endl;

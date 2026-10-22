@@ -6,7 +6,7 @@
 /*   By: msimoes <msimoes@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/23 13:44:07 by msimoes           #+#    #+#             */
-/*   Updated: 2026/07/24 12:08:05 by msimoes          ###   ########.fr       */
+/*   Updated: 2026/10/22 11:00:38 by msimoes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,11 @@ void ScavTrap::takeDamage(unsigned int amount)
 
 void ScavTrap::beRepaired(unsigned int amount)
 {
+	if(_hit_points <= 0)
+	{
+		std::cout << "ScavTrap " << _name << " is dead, it cannot repait!" << std::endl;
+		return;
+	}
 	if(_energy_points <= 0)
 	{
 		std::cout << "ScavTrap " << _name << " has no energy to repair!" << std::endl;
